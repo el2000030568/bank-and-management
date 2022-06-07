@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width+device-width,initial-scale=1">
+    <link rel="stylesheet" href= "{{ url_for('static',filename='main.css') }}">
+    <script src="static/validation.js" type="text/javascript"></script>
+    <title>login page</title>
+</head>
+<body>
+ <div class="ig">
+      <img  align="center" id="ig" src= "{{ url_for('static',filename='projectlogo.png') }}">
+
+       </div>
+
+       <div class="page">
+           <div id="errorname"> <h6 style="color:red"> {{data}}</h6> </div>
+          <form action="/login" method="post" name="registrationform" onsubmit="return validateall()">
+            <table>
+            <tr>
+                <td><input type="text" name="username" id="username" placeholder="Enter User Name or account number" onblur="return validateUserName()" ></input></td>
+            </tr>
+               <tr>
+
+                </tr>
+                <tr>
+                 <td><input type="password" name="password" id="password" placeholder="Enter Password" onblur="return validatePassword()"></input></td>
+                </tr>
+                <tr>
+           <td><input type="submit" value="Login"></td>
+            </tr>
+        </table>
+          </form>
+               <div>
+               <a class="fp" href="https://www.youtube.com/">forgot password</a>
+              </div>
+             <div><hr style="width:120%;text-align:left;margin-left:-30px;margin-top:-50px">
+             </div>
+            <div class="cn">
+               <a href="/createnew"><input type="button" value="create new"> </a>
+       </div>
+       </div>
+<div class="para">
+    <h1 style="color:blue">Banking & Finance System</h1>
+</div>
+<div class="para1">
+     <h4>Sdp-2 new project overcome for to select bussines system Welcome to my website
+         and login or create new</h4>
+</div>
+
+
+</body>
+</html>

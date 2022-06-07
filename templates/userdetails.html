@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>userdetails</title>
+	<link rel="stylesheet" href="{{url_for('static',filename='userdetails.css')}}">
+</head>
+<body>
+
+      <table class="table">
+			<tr>
+				<th>Name</th>
+				<th>lastname</th>
+				<th>account number</th>
+				<th>email</th>
+				<th>password</th>
+				<th>mobile no</th>
+				<th>Balances</th>
+			</tr>
+
+			<!-- here is a for-loop to give us all the socks -->
+			{% for row in rows %}
+			<tr>
+				<td>{{ row[0] }}</td>
+				<td>{{ row[1] }}</td>
+				<td>{{ row.5 }}</td>
+				<td>{{ row.2 }}</td>
+				<td>{{ row.password }}</td>
+				<td>{{ row.mobileno }}</td>
+				<td>{{ row.Balances }}</td>
+			</tr>
+      {%endfor%}
+      </table>
+</body>
+</html>

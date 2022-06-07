@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{url_for('static',filename='homepage.css')}}">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <title>homepage LDP</title>
+</head>
+<body>
+<div class="header1">
+    <table>
+        <tr>
+            <td><img id="image1" src="static/1.png"></td>
+              <td style="position:relative;left:-5px;top:-10px;"><h4>Banking Mangment system<br><i style="font-size:10px;color:green;">finace represtative</i></h4></td>
+              <td><div class="dropdown">
+                      <input type="submit" value="sign in/out">
+                      <div class="dropdown-content">
+                          <form action="/user">
+                          <input id="b1" type="submit" value="User">
+                              </form>
+                          <form action="/admin">
+                          <input id="b1" type="submit" value="Admin">
+                          </form>
+                      </div>
+
+</div></td>
+        </tr>
+    </table>
+</div>
+
+<div class="line">
+    <marquee direction="left" style="position:relative;top:7px">Be-carefull when the transcations and don't tell ur account number and password
+    with any body.Be alert! new updates and new loans.If anything happened its not our reponsable.
+    please come and verify your account and despoist your money<h style="color:green">LDP</h></marquee>
+</div>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="static/img1.jpg" id="img1">
+      <div class="bank1" style="color:green">
+          <h4>Stay out of banks. You may
+              never get as rich as you could<br>with other people’s money
+              and some luck, but the tradeoff  <br>is sleeping at night.</h4>
+      </div>
+      <div class="text2" style="color:green">
+          <h2>Trnust on you investment <br> Safe money: </h2>
+          <h5 style="color:black">The federal [bank deposit] insurance scheme has worked up to now simply and solely because there have been very few bank failures. The next time we have a pestilence of them it will come to grief quickly enough, and if the good banks escape
+          ruin with the bad ones it will be only because the taxpayer foots the bill.<br><br>
+         <h3> Be Carefull and Believe the trusted banks!</h3></h5>
+      </div>
+    <div class="text">Trust on you!</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="static/img2.jpg" id="img2">
+      <div class="text4">
+          <h2 style="color:#FF69B4"> Power of Money</h2>
+          <h6>Money is important to provide a dignified life worthy of every human being and every family.Every man loves money and strives to get money by all means. There are people who get money legally  and some of them get money illegally.  Love of money is a natural thing in the instinct of every human being.Money is essential in life. No one does not likes money.</h6>
+          <p>Most of these people are weak. They have limited thinking and their total dependence in making money is on hard work.
+          </p>
+          <h6 > <blink>For loan appliaction please register form user</blink></h6>
+          <form action="/createnew">
+              <input type="submit" value="register here">
+          </form>
+      </div>
+      <div class="text3">
+          <h5>NOTE:
+
+i. Authorised dealers should not offer leveraged swap structures to clients.
+
+ii. Authorised dealers should not allow the swap route to become a surrogate for forward contracts for those who do not qualify for forward cover.
+
+<br>Other Derivatives – Foreign Currency Options:</h5>
+      </div>
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+      <div><img src="static/1.png" id="img3"></div>
+
+      <div class="text5">
+          <h1 style="color:green">LDP</h1>
+          <p style="color:grey;position:relative;top:-29px;left:1px;font-size:8px;">powered by 3134</p>
+          <p style="position:absolute;left:-220px;top:50px;color:grey;">The Bank Policy Institute (BPI) is a nonpartisan public policy, research and advocacy group, representing the nation’s leading banks. Our members include universal banks, regional banks and the major foreign banks doing business in the United States. Collectively, they employ almost 2 million Americans, make 72% of all loans and nearly half of the nation’s small business loans and serve as an engine for financial innovation and economic growth.<br>
+
+Our staff includes economists, researchers, financial analysts and attorneys, all focused on using data and analysis to shape sound policy. We distribute our research and analysis to U.S. and global regulators, members of Congress, academics and media through academic-quality research papers, blog posts, white papers, comment letters, and Congressional testimony.<br>
+
+We also serve our members through our Business-Innovation-Technology-Security division (better known as BITS), which provides an executive level forum to discuss and promote current and emerging technology, foster innovation, reduce fraud and improve cybersecurity and risk management practices for the nation’s financial sector.
+
+We take as a given that the business of banking is the business of taking and managing risk. BPI aims to shape policy to allow the nation’s leading banks to best serve their customers and fulfill their vital economic role while holding sufficient capital and liquidity to ensure that the risks they take are borne by their shareholders and creditors, not the taxpayer.</p>
+      </div>
+    <div class="text">Caption Three</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<div class="one">
+    <h2 style="position:relative;top:20px;left:50px; color:green;">Home Sweet Loan</h2>
+    <h4 style="position:relative;top:20px;left:50px; color:#800080;">1% INTEREST DURING THE 1ST YEAR</h4>
+    <h5 style="position:relative;top:10px;left:50px; color:black;">sary
+Owning a home is a big decision. A good start can make all the difference That's <br>why MHC offers you a home loan at only 19" for the first year to help you save money <br>and build wealth. Whether you're buying, building. renovating a house, or refinancing <br>an existing loan, you can bank on MHC for helpful advice at <br>every step of your home buying journey<br> • Free counselling <br>• In House Insurance <br>• Legal services
+HOUSING COMPANY LTD</h5>
+    <p style="position:relative;top:10px;left:50px; color:black;font-size:10px;">After you’ve made an offer and signed a purchase agreement, the lender will order the home appraisal. <br>A home appraisal is a licensed or certified appraiser's opinion of a home's value and typically costs about $500. <br>The appraisal is based on research of recent sales of comparable homes in the area, an analysis of the property and the <br>appraiser's judgment.1
+
+Lenders require a home appraisal to make sure that the investment is enough of a Return on <br>Investment (ROI). The property serves as collateral for the mortgage, so if the borrower defaults and goes into foreclosure, <br>the lender will sell the home to recoup the money lent.2</p>
+    <img src="static/image/img1.jpg" id="i1">
+</div>
+<div>
+    <img src="static/image/img2.jpg" id="i2" style="image-radius:5px;">
+    <h1 style="position:relative;top:190px;left:800px; color:green;font-family:Franklin Gothic Medium;">New Interset 5% OFF</h1>
+    <h5 style="position:relative;top:190px;left:790px; color:green;font-family:Franklin Gothic Medium;">KEY TAKEAWAYS<br>
+The interest rate is the amount charged on top of the principal by a lender to a <br> borrower for the use of assets.
+An interest rate also applies to the amount earn <br> at a bank or credit union from a deposit account.
+Most mortgages use <br>simple interest. However, some loans use compound interest, which is applied <br> the principal but also to the accumulated interest of previous periods.
+ <br> -->A borrower that is considered low risk by the lender will have a lower interest <br> rate. A loan that is considered high risk will have a higher interest rate.
+<br>Consumer loans typically use an APR, which does not use compound interest.<br>
+The APY is the interest rate that is earned at a bank or credit union from savings <br>account or CD. Savings accounts and CDs use compounded interest.</h5>
+</div>
+<div>
+    <img src="static/image/img3.jpg" id="i3" style="image-radius:5px;">
+    <h1 style="position:relative;top:360px;left:10px; color:#D9118D;font-family:Franklin Gothic Medium;">HOUSING LOAN</h1>
+    <h5 style="position:relative;top:370px;left:10px; color:#11D9C2;font-family:Franklin Gothic Medium;">KEY TAKEAWAYS<br>
+People generally take a home loan for either buying a house/flat or a plot of land for <br>construction of a house, or renovation, extension and repairs to the existing house.<br>
+The property is mortgaged to the lender as a security till the repayment of the loan. <br>The bank or financial institution will hold the title or deed to the property till the loan<br> has been paid back with the interest due for it.
+The interest rates for home loans can be<br> fixed or floating, or partly fixed and or partly floating, suiting the needs of the borrower.<br>
+        There are also certain tax benefits available on your home loan under the Section 80EE <br>of Income Tax Act. However, the Income tax deduction can be claimed on home loan <br> interest by first time home buyers only.</h5>
+</div>
+<div class="aboutus">
+    <h1>About Us</h1>
+    <p>Widely known for customer centricity, Canara Bank was founded by Shri Ammembal Subba Rao Pai,
+        a great visionary and philanthropist, in July 1906, at Mangalore, then a small port town in
+        Karnataka. The Bank has gone through the various phases of its growth trajectory over
+        hundred years of its existence. Growth of Canara Bank was phenomenal, especially after
+        nationalization in the year 1969, attaining the status of a national level player in
+        terms of geographical reach and clientele segments. Eighties was characterized by business
+        diversification for the Bank. In June 2006, the Bank completed a century of operation
+        in the Indian banking industry.</p>
+    <h1>Services of Banks</h1>
+    <p>In modern times there are many services that are offered by the banks. This is done so that
+        more and more customers are attracted. Although there are some basic services as well which
+        are offered by the banks. Thus, these basic services are common for all banks. In this
+        article, we will help you understand some of the services of banks which are common across
+        all the banks in India.</p>
+    <p>Following are the few services which bank provides</p>
+
+    <li>Advancements of loans</li>
+    <li>Cheque payments</li>
+    <li>Discounting on bills of exchange</li>
+    <li>Collecting and paying the credit instruments</li>
+    <li>Guarantee by banks</li>
+    <li>Consultancy</li>
+    <li>Credit cards</li>
+    <li>Funds remittance</li>
+     <li>Debit cards</li>
+    <div class="task">
+    <div class="task1">
+    <img src="static/image/achi.svg" style="position:relative;top:-5px;">  <h2 style="font-weight:bold;color:#F20092;font-size:20px;position:relative;top:-60px;left:60px;">Advancements of loans</h2>
+    <p>Banka runs on the profit they make. They are into the business of making profits. So, to generate the profit they give loans to the public and private organizations.
+Thus, in return, they get an interest paid to them which helps them in making a profit
+    </p>
+    </div>
+
+    <div class="task2">
+      <img src="static/image/cheque.jpg" style="color:pink;width:50px;height:30px;">
+         <h2 style="font-weight:bold;font-size:20px;position:relative;top:-45px;left:60px;">Cheque Payments</h2>
+          <p>
+The person who holds an account in the bank is provided with the cheque pads.
+
+Thus, the account holders draw cheque upon the bank when they are required to pay the money.
+
+    So after verifying formally, banks pay for the cheques and proceed with the official procedures.</p>
+
+    </div>
+    <div class="task3">
+     <img src="https://supplier.meesho.com/images/icon-3.svg">
+    <h2 style="color:#F20092;font-weight:bold;font-size:20px;position:relative;top:-60px;left:60px;">Discounting on bills of exchange</h2>
+        <p>This is another popular services of banks for lending the money. In this method, the person who holds the bill of exchange gets it discounted by the bank in exchange for  bill.
+
+The creditor gives the payment to the debtor who accepts it and agrees that the amount
+</p>
+    </div>
+    <div class="task4">
+    <img src="static/image/credit.jpg" style="width:80px;height:80px;position:relative;top:-20px;left:-20px;">
+   <h2 style="color:#00B5F2;font-weight:bold;font-size:20px;position:relative;top:-100px;left:50px;"> Collecting and paying the credit instruments</h2>
+    <p>
+For modern purposes,there are a variety of instruments  are used for credit instruments.This includes promissory notes, bill of exchange, cheques, etc. The credit instruments are the representative of the customers.
+</p>
+    </div>
+    <div class="task5">
+ <h2 style="color:green;font-weight:bold;font-size:20px;position:relative;top:-20px;left:80px;">Guarantee by Banks</h2>
+   <p>
+In modern banking, customers are provided with the guarantee by the banks. This happens mostly when the customers have to deposit a large fund in courts or government offices for various reasons.
+
+    The banks itself acts as a guarantee for that person.
+
+Consultancy
+Modern banks expand their businesses and also provides consultancy services to its customers.
+
+For this, they hire legal, financial, and market leaders and experts who can provide advice to customers regarding industry, income, trade, investment, etc.
+
+Credit Cards
+It is a service that allows the holders to make the purchase of the goods and services in exchange for a credit card.
+   </p>
+    </div>
+    <div class="task6">
+   <h2 style="color:#F2DB00;font-weight:bold;font-size:20px;position:relative;top:-20px;left:110px;">Funds Remittance</h2>
+   <p>
+In this facility, banks provide the customers to transfer their funds from one account to another using cheque, drafts, etc.
+
+Debit Cards
+Debit cards withdraw the funds electronically from the cardholder accounts. To verify the transaction and keep it safe all the debit cards requires personal identification number (PIN).
+
+    The other services of banks include online banking, home banking, ATM services, and many more.</p>
+
+    </div>
+
+</div>
+</div>
+
+<footer>
+    <div class="imag1">
+        <img src="static/projectlogo.png" style="width:300px;height:300px;">
+    </div>
+    <div class="pages">
+        <h3>pages</h3>
+        <a href="">About us</a>|
+        <a href="">services</a>|
+        <a href="">Loans</a>|
+        <a href="">Sign in/out</a>
+    </div>
+    <div class="doc">
+        <h3>Documents</h3>
+        <a href="">privace policy</a>|
+        <a href="">Terms of use</a>|
+        <a href="">Refund policy</a>
+
+    </div>
+    <div class="follow">
+        <h3>Follow Us</h3>
+        <a href=""><i class='fa fa-facebook-official' ></i></a>
+        <a href=""><i class='fa fa-linkedin-square' ></i></i></a>
+        <a href=""><i class='fa fa-instagram' ></i></a>
+        <a href=""><i class='fa fa-twitter'></i></a>
+    </div>
+
+    <div class="contact">
+        <h3>Contact Us</h3>
+         <a href=""><i class='fa fa-phone-square'></i></a>
+        <a href=""><i class='fa fa-whatsapp'></i></i></a>
+        <a href=""><i class='fa fa-send'></i></i></a>
+
+    </div>
+    <hr style="width:1300px;left:0px;position:absolute;top:420px;color:blue;">
+    <p style="left:3px;position:absolute;top:440px;color:white;">Copyrights &copy; 2021 LDP. All rights reserved </p>
+</footer>
+</body>
+</html>

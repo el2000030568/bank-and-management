@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href= "{{ url_for('static',filename='p1.css') }}">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <script src="static/validation.js" type="text/javascript"></script>
+    <title>home page</title>
+</head>
+<body>
+<div class="topnav">
+   <a> <div id="mySidenav" class="sidenav">
+  <a href="/login/bank"><i class="fa fa-bank" style="font-size:50px"></i><br></br>bank</a>
+       <a href="#" style="position:absolute;left:-10px;top:330px">piggy bank</a>
+       <img  align="center" style="postion:absolute;top=-30px;left=-50px;" src= "{{ url_for('static',filename='piggy.png') }}">
+
+</div>
+       <div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+
+ </a>
+  <a class="active" href="/login" style="position:relative;left:50px">Home</a>
+  <a href="/loans" style="position:relative;left:50px">Loans</a>
+  <a href="/graphs" style="position:relative;left:50px">graphs</a>
+  <a href="#about" style="position:relative;left:50px">About</a>
+   <a href="/" style="position:relative;left:800px">Logout</a>
+</div>
+
+<div class="homepage">
+        {% block content %}{% endblock %}
+</div>
+<footer style="background-color:black;">
+     <img  align="center" id="ig" src= "{{ url_for('static',filename='projectlogo.png') }}">
+    <P style="color:white;position:relative;top:100px;left:100px">Copyright © 2017 – 2022 Standard Chartered</P>
+    <P style="color:white;position:relative;top:200px;left:600px;">contact us on:-<br>832199399</p>
+    <P style="color:white;position:relative;top:150px;left:750px;">facebook:-<br><a href="www.facebook.com">Money for people</a> </p>
+    <P style="color:white;position:relative;top:100px;left:900px;">instagram:-<br><a href="www.instagram.com">LDP</a></P>
+     <hr style="color:white">
+    <p style="color:#00FF00;position:relative;top:-300px;left:470px">Force Majeure means any payment or communication system failure, power failure, computer breakdown <br>or malfunction or third party
+interference <br>with a computer system, mechanical fault or failure, problem or fault in any software program, government <br>restrictions
+intervention, emergency procedures, suspension of trading by any relevant market, <br>civil disorder, act or threatened act of terrorism, natural
+disaster, war, strike,<br> change in law, change in legal usage, convertibility or transferability of any currency, or other circumstances beyond our
+control.</p>
+
+</footer>
+
+</body>
+</html>

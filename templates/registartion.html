@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <script src="static/validation.js" type="text/javascript"></script>
+    <link rel="stylesheet" href= "{{ url_for('static',filename='register.css') }}">
+    <title>registration form</title>
+</head>
+<body>
+ <div class="ig">
+     <h1 class="ee" >Registration Form</h1>
+     <img  align="center" id="ig" src= "{{ url_for('static',filename='projectlogo.png') }}">
+       </div>
+
+ <form  action="/newpage" method="post" name="r1" onsubmit="return validate()">
+<div class="firstin">
+
+           <table>
+            <tr>
+                <td><input type="text" name="username" id="C1" placeholder="First Name" onblur="return firstname()"></input></td>
+            </tr>
+                <tr>
+                 <td><input type="text" id="C2" name="lastname" placeholder="Last Name" onblur="return firstname1()"></input></td>
+                </tr>
+               <tr>
+                 <td><input type="email" id="C3" name="email" placeholder="Enter email" ></input></td>
+                </tr>
+               <tr>
+                 <td><input type="number" id="c4" name="phnumber" placeholder="Phone Number" onblur="return firstname2()"></input></td>
+                </tr>
+                <tr>
+                    <tr>
+                 <td><input type="number" id="c5"name="accnumber" placeholder="Enter Account number" onblur="return firstname3()"></input></td>
+                </tr>
+               <tr>
+                 <td><input type="password" id="c6" name="password1" placeholder="Enter Password" onblur="return firstname4()"></input></td>
+                </tr>
+               <tr>
+                 <td><input type="password" id="c7" name="password2" placeholder="Conform Password" onblur="return firstname5()"></input></td>
+        </table>
+
+     </div>
+    <input id="c8" type="submit" value="register">
+</form>
+</body>
+</html>

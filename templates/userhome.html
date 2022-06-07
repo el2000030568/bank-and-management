@@ -1,0 +1,112 @@
+{% extends 'page1.html' %}
+{% block content %}
+<a class="active"></a>
+<h2 style="color:#87CEEB;text-align:center;">Welcome to bank LDP <i class="fa fa-bank" style="font-size:24px"></i></i></h2>
+<div class="container">
+
+ <img src="static/image/user2.jpg" id="img11">
+  <div class="overlay">
+      {% for row in rows %}
+      <div class="data">
+          <h1 style="color:#A52A2A;position:absolute;top:10px;left:150px;font-size:22px;font-family: Gill Sans Extrabold, sans-serif;" >PROFILE</h1>
+          <h1 style="color:#00008B;position:absolute;top:60px;left:25px;font-size:17px;font-family: Gill Sans Extrabold, sans-serif;" >ACCOUNTNUMBER : {{row.6}}</h1>
+          <h1 style="color:black;position:absolute;top:90px;left:30px;font-size:17px;font-family: Gill Sans Extrabold, sans-serif;" id="row1">First name :<h style="color:#C0C0C0">{{row['name']}}</h></h1>
+          <h1 style="color:black;position:absolute;top:120px;left:30px;font-size:17px;font-family: Gill Sans Extrabold, sans-serif;">Last Name : <h style="color:#C0C0C0">{{row.2}}</h></h1>
+          <h1 style="color:black;position:absolute;top:150px;left:30px;font-size:17px;font-family: Gill Sans Extrabold, sans-serif;">Email : <h style="color:#C0C0C0">{{row.3}}</h></h1>
+          <h1 style="color:black;position:absolute;top:180px;left:30px;font-size:17px;font-family: Gill Sans Extrabold, sans-serif;">Phonenumber : <h style="color:#C0C0C0">{{row.5}}</h></h1>
+          <h1 style="color:green;position:absolute;top:230px;left:130px;font-size:22px;font-family: Gill Sans Extrabold, sans-serif;">₹ BALANCE</h1>
+          <input style="color:white;position:absolute;top:280px;left:120px;background-color:#77BFC7;border-radius:5px;width:150px;height:40px;border:none;" type="submit" value="{{row.0}}">
+      </div>
+      {%endfor%}
+  </div>
+</div>
+<h2 style="font-weight: normal;position:relative;left:20px;">
+
+    <strong style="font-size:30px;"> Product </strong>    to meet your life goals
+</h2>
+<div class="productbox">
+<span class="savingacb"></span>
+ <h4>Digital Savings Account</h4>
+</div>
+<h1>General Banking
+Terms and Conditions
+For commercial banking clients of
+Standard Chartered Bank Uganda Limited</h1>
+  <p>Term & conditions:<br>These general terms and conditions apply to accounts and a range of banking services provided by Standard Chartered Bank
+Uganda Limited. Please read this document carefully to ensure you fully understand it. If you have any questions, please
+speak to your relationship manager<br> <p style="color:gray; position:relative; left:500px; top:2px">Published as of 31 Jan 2022</p></p>
+    <p>1. OUR SERVICE STANDARD<br>
+We will use reasonable care and skill when providing you with the Account and / or Service.<br>
+2. ELECTRONIC ACCESS TO YOUR ACCOUNT AND / OR SERVICE<br>
+2.1 What is Straight2Bank?<br>
+This is our electronic communication system which we use to offer a range of transactional, data transmission and reporting functionalities
+across key Services, including cash (payments and collections), trade (documentary trade and on an open account basis) and foreign
+exchange. Straight2Bank Services may be supplied through a range of Channels, including our website, the internet or such other electronic
+link designated by us from time to time.<br>
+2.2 What is our Straight2Bank Service?<br>
+This refers to the various Services offered through Straight2Bank, including:<br>
+(a) “Straight2Bank Web” – an internet based version of our Straight2Bank Services that provides access to the suite of Services available
+under an Account. When you open an Account with us, you will be offered “Straight2Bank Web”, through which you will be able to
+perform:<br> (i) a range of transactional and reporting activities for the basic cash Services (including payments and collections); and (ii) a
+range of spot foreign exchange transactions; and<br>
+(b) “Straight2Bank Access” – is our “host-to-host” Straight2Bank Service, which includes connectivity through application programming
+interfaces and is used for the purposes of transmitting data files between you and us in connection with our provision of Services through
+a Connectivity Channel.<br>
+2.3 Availability of Straight2Bank Services<br>
+While we endeavour to minimise any service outages, Straight2Bank Services may be unavailable from time to time. You are responsible for
+having adequate contingency plans to transact by other means if there is any interruption to, delay in, or suspension or withdrawal of
+Straight2Bank Services.<br>
+Your right to access our Straight2Bank Services is subject to our discretion.<br>
+We may decide not to maintain, support or modify a Connectivity Channel, or maintain a superseded version of any Connectivity Channel.<br>
+2.4 Our responsibilities in relation to systems and security<br>
+We will:<br>
+(a) Channel connections: use reasonable endeavours to re-establish any Channel we control which is interfered with or becomes
+unavailable. We will provide you with alternative arrangements where we can; and<br>
+(b) Channel security: take reasonable measures to prevent unauthorised access to any Channel we control except for the matters you
+agree to be responsible for as stated in the section below under this part – “Electronic access to your account and / or service – Your
+responsibilities in relation to systems and security”.<br>
+We are not responsible for any failure of your system, or an Appointee’s system, to integrate with a Connectivity Channel, or for ensuring
+compatibility of your system with ours.<br>
+2.5 Your responsibilities in relation to systems and security<br>
+You agree that:<br>
+(a) Adequate understanding: we may provide you with User Guides, Security Procedures, any technical or functional specifications and / or
+other materials and instructions for the access to, operation and use of Services. You have read, understood and assessed all such
+materials and determined that they are adequate to protect your interests;<br>
+(b) Adequate controls: you have taken reasonable steps to detect, prevent, remove and remedy any unauthorised access to or use of the
+Channel (including actual or potential Malware breaches of your Client Systems);<br>
+(c) Adequate internal processes: you have adequate internal controls, procedures, processes and other security arrangements to
+prevent unauthorised access to or use of the Channel (including actual or potential Malware interference with your Client Systems);<br>
+(d) Using the system within the prescribed limits: you have ensured that the Channel is used within the authorisation limits and
+functionality parameters you set up;<br>
+(e) Report problems: you must immediately report any: (i) actual or potential Loss suffered by you in connection with the Channel; (ii) loss
+or actual or attempted, theft, misuse or unauthorised use, of System Materials, any Electronic Key, Client ID, User ID, Digital Certificate or
+mobile device; (iii) actual or potential, problems with or unauthorised access to the Channel or Service; (iv) actual or attempted
+unauthorised transactions; or (v) failure to comply with User Guides, Security Procedures or other specifications. You will help us with our
+reasonable requests to resolve such problems;<br>
+(f) Responsibility for Software: we may provide you with Software necessary for you to use the Services. You are responsible for ensuring
+that you have the necessary consents to install, configure and integrate the Software with your Client Systems;<br>
+(g) Supporting equipment requirements: you are responsible for using, having or obtaining the necessary connectivity, hardware, software
+and other equipment for using the Channel that is suitable and satisfies your requirements. You are solely responsible for obtaining all
+necessary consents and for compliance with any conditions of use or charges associated with your use of any Channels, equipment, or
+service accessed through that equipment. You are responsible for any Electronic Key, Client ID, User ID, Digital Certificate or mobile
+device we provide to you or which you use to access a Service or to communicate with us electronically or to give us Instructions;<br>
+(h) Responsibility for content: you are fully responsible for any document, information or data you provide to us through any Channel. You
+agree that we may forward any documents in accordance with your Instructions;<br>
+(i) Responsibility for Connectivity Channel: you will not use the Connectivity Channel or any Software information or data provided to
+you for creating any similar connectivity channel or software as a substitute for, or substantially similar to, the Connectivity Channel. You
+must access or use a Channel or any information or data provided through it only to communicate with us and not use it in any manner
+not approved by us in writing;<br>
+(j) Encryption: unless otherwise agreed by us in writing, all information and any documents communicated by you via any Connectivity
+Channel shall be encrypted and digitally signed;</p>
+    <br>
+    <p class="exp">For example:
+An “Administrator” is a category of Users that has full powers to administer, manage and appoint other Users for Straight2Bank Services on
+your behalf, including assigning entitlements, limits and configuring usage of the system.
+</p>
+    <h5 style="color:blue">YOU MUST PAY AMOUNTS YOU OWE</h5>
+    <p>You must pay money you owe us
+If we ask you to, you must immediately pay us all amounts you owe us in full and without set-off, deduction or counterclaim and in clear and
+immediately available funds that no third party can claim any right to. Your payments must be in the relevant currency and must be made to the
+account we specify.</p>
+</div>
+{% endblock %}
